@@ -1,0 +1,55 @@
+/* Our Candidates Placed In Section Styling */
+.candidates-placed-section {
+  padding: 60px 0;
+  background-color: #e0f7fa;
+}
+
+.candidates-placed-section .section-title {
+  color: #007c91;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.company-logo {
+  max-height: 80px;
+  width: auto;
+}
+
+/* Custom styles for carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* Adjust the width of the controls */
+}
+
+.carousel-control-prev {
+  left: -7%; /* Move left control further out */
+}
+
+.carousel-control-next {
+  right: -7%; /* Move right control further out */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #007c91;
+}
+
+/* Carousel indicators (dots) styling */
+.carousel-indicators {
+  position: static;
+  margin-top: 20px; /* Adjust margin to place below carousel */
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-indicators li {
+  background-color: #007c91;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+}
+
+.carousel-indicators .active {
+  background-color: #004d4d;
+}

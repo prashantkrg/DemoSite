@@ -1,0 +1,833 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.nav {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Slide Styles */
+.main-slide {
+  margin-top: 60px;
+  width: 100%;
+  height: 65%;
+  overflow: hidden;
+  position: relative;
+  background: #a5e1e0;
+}
+strong {
+  color: #007bff;
+}
+
+.slide-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  min-width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.text-content {
+  margin: 100px;
+  width: 50%;
+  padding: 40px;
+}
+
+.image-content {
+  margin: 100px;
+  /* margin-left: 55vw; */
+  width: 50%;
+  padding-right: 40px;
+}
+
+.image-content img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Slider Controls */
+.slider-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.progress-bar {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  height: 5px;
+  background: lightgray;
+}
+
+.progress {
+  width: 0;
+  height: 100%;
+  background-color: green;
+  transition: width 1s ease;
+}
+
+.dots {
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: gray;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #007bff;
+}
+
+/* Responsive for larger screens (desktops) */
+@media (min-width: 1200px) {
+  .main-slide {
+    height: 65%; /* Keep 65% for larger screens */
+  }
+  .text-content {
+    margin: 80px;
+    padding: 30px;
+  }
+  .image-content {
+    margin: 80px;
+    padding-right: 30px;
+  }
+}
+
+/* Responsive for laptops */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .main-slide {
+    height: 60%; /* Adjust height for laptops */
+    margin-top: 80px;
+  }
+  .text-content,
+  .image-content {
+    margin: 60px;
+    padding: 20px;
+  }
+  .image-content img {
+    max-width: 85%;
+  }
+}
+
+/* Responsive for tablets */
+@media (max-width: 991px) and (min-width: 768px) {
+  .main-slide {
+    height: 50%; /* Adjust height for tablets */
+  }
+  .text-content {
+    margin: 40px;
+    padding: 20px;
+    width: 100%; /* Full width on tablets */
+  }
+  .image-content {
+    margin: 40px;
+    padding: 20px;
+    width: 100%; /* Full width on tablets */
+  }
+  .image-content img {
+    max-width: 80%;
+  }
+}
+
+/* Responsive for mobile phones (portrait) */
+@media (max-width: 767px) {
+  .main-slide {
+    height: 55%; /* Adjust height for mobile */
+    margin-top: 80px;
+  }
+
+  /* Hide the image content for mobile phones (portrait) */
+  .image-content {
+    display: none; /* Remove the image section */
+  }
+
+  .text-content {
+    margin: 20px;
+    padding: 10px;
+    width: 100%; /* Full width for mobile */
+    /* white-space: nowrap; Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis if text overflows */
+  }
+}
+
+/* Responsive for small mobile phones (landscape) */
+@media (max-width: 480px) {
+  .main-slide {
+    height: 55%;
+    margin-top: 80px;
+  }
+  .text-content {
+    margin: 10px;
+    padding: 5px;
+    width: 80%; /* Full width */
+  }
+
+  .image-content {
+    margin: 10px;
+    padding: 5px;
+    width: 100%; /* Full width */
+    font: 1em sans-serif;
+  }
+  .image-content img {
+    max-width: 70%;
+  }
+}
+
+/* Vision Section */
+.vision-section {
+  height: 400px;
+  padding: 50px 0;
+  background-color: #f7f7f7;
+}
+
+.vision-left .vision-text {
+  margin-left: 100px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.vision-left .company-name {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.vision-paragraph {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Buttons */
+.btn-connect {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .vision-section {
+    display: flex;
+  }
+  .vision-text {
+    margin-right: 90px;
+  }
+  .vision-text,
+  .company-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+  }
+
+  .vision-left,
+  .vision-right {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+/* Services section  */
+/* Content Container */
+.content-container {
+  width: 100vw;
+  padding: 40px 20px;
+  background-color: rgb(183, 230, 231);
+}
+
+/* Company Name */
+.company-name {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Services Title */
+.services-title {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* Company Description */
+.company-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Image */
+.image-container {
+  margin-bottom: 30px;
+}
+
+/* Service Box */
+.service-box {
+  height: 150px;
+  width: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.service-box:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background-color: #e0e0e0;
+}
+
+.service-box h4 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Service Container */
+.service-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .row.align-items-center {
+    flex-direction: column;
+  }
+
+  .service-box {
+    height: 120px;
+    width: 120px;
+  }
+
+  .image-container img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* About us */
+.about-us-section {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  margin-bottom: 0px;
+}
+
+.image-container {
+  position: relative;
+  max-width: 100%;
+}
+
+.about-image {
+  width: 80%; /* Reduced size of the image */
+  height: auto;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+}
+
+.info-box {
+  position: absolute;
+  bottom: 10px;
+  width: 120px; /* Square shape */
+  height: 120px;
+  background-color: rgba(0, 123, 255, 0.8);
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adding shadow */
+}
+
+.info-box:first-of-type {
+  left: 10px;
+}
+
+.info-box:last-of-type {
+  right: 10px;
+}
+
+.info-box i {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.text-section {
+  color: #333;
+}
+
+.text-section h2 {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.text-section p {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Why choose us  */
+
+.whychooseus {
+  background-color: #9fddeb;
+}
+
+.text-center h1,
+.text-center h2 {
+  margin-top: 20px;
+}
+
+.box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.box:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.box i {
+  color: #007bff;
+}
+
+.box h4 {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.box p {
+  color: #6c757d;
+}
+
+/* testimonials */
+/* General Section Styling */
+.testimonial-section {
+  padding: 50px 0;
+  background-color: #e0f7fa; /* Light aqua background */
+}
+
+/* Section Title */
+.section-title {
+  color: #007c91; /* Dark aqua color */
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* Testimonial Styling */
+.testimonial {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Testimonial Content Styling */
+.testimonial-content {
+  margin-top: 20px; /* Add space between the image and content */
+}
+
+/* Testimonial Text */
+.testimonial-text {
+  font-size: 1.25rem;
+  color: #007c91; /* Dark aqua color */
+  margin-bottom: 15px;
+}
+
+/* Testimonial Author */
+.testimonial-author {
+  color: #004d4d; /* Darker shade of aqua */
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Testimonial Image Styling */
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Center the image and content */
+.mx-auto {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Carousel Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #007c91; /* Dark aqua for controls */
+  border-radius: 50%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px; /* Smaller width to prevent them from taking too much space */
+  height: 50px; /* Smaller height to align with the testimonial */
+  top: 50%; /* Vertically center */
+  transform: translateY(-50%);
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .testimonial-text {
+    font-size: 1.1rem;
+  }
+
+  .testimonial {
+    padding: 15px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: 60%; /* Adjust for smaller screens */
+  }
+}
+
+/* Contact Us */
+/* styles.css */
+
+/* Contact Section Styling */
+.contact-section {
+  padding: 60px 0;
+  background-color: #f1f8f9; /* Light background color */
+}
+
+.contact-section .section-title {
+  color: #007c91; /* Dark aqua color */
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.contact-info-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-info {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  flex: 0 0 calc(50% - 15px); /* Take 50% of the row with some margin */
+  margin-bottom: 30px;
+}
+
+.contact-info:hover {
+  transform: translateY(-5px);
+}
+
+.contact-info h5 {
+  margin-top: 15px;
+  color: #007c91;
+}
+
+.contact-info p {
+  color: #333333;
+  margin-top: 10px;
+}
+
+.contact-icon {
+  font-size: 3rem;
+  color: #007c91;
+}
+
+/* Contact Us Button */
+.contact-btn {
+  background-color: #007c91;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #004d4d; /* Darker shade for hover effect */
+}
+
+/* Contact Form Section */
+.contact-form-section {
+  padding: 60px 0;
+  background-color: #e0f7fa; /* Aqua background */
+}
+
+.contact-form-section .section-title {
+  color: #007c91; /* Dark aqua color */
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.form-control {
+  border-radius: 5px;
+  border: 1px solid #007c91;
+}
+
+.btn.contact-btn {
+  background-color: #007c91;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.btn.contact-btn:hover {
+  background-color: #004d4d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-info {
+    flex: 0 0 100%; /* Full width for smaller screens */
+    margin-bottom: 20px;
+  }
+
+  .contact-section .section-title,
+  .contact-form-section .section-title {
+    font-size: 2rem;
+  }
+}
+/* Our Candidates Placed In Section Styling */
+/* Define CSS variables for consistency */
+:root {
+    --primary-color: #007c91;
+    --secondary-color: #004d4d;
+  }
+  
+  /* Section styling */
+  .candidates-placed-section {
+    padding: 60px 0;
+    background-color: var(--primary-color); /* Use CSS variable for consistency */
+  }
+  
+  .candidates-placed-section .section-title {
+    color: var(--secondary-color); /* Use CSS variable for color */
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center; /* Center alignment for section title */
+  }
+  
+  /* Company logos styling */
+  .company-logo {
+    max-height: 80px;
+    width: auto;
+    display: block; /* Ensure images are treated as block elements */
+    margin: 0 auto; /* Center the logos */
+    transition: opacity 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .company-logo:hover {
+    opacity: 0.8; /* Slightly fade the logo on hover */
+  }
+  
+  /* Custom styles for carousel controls */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%; /* Adjust width for better positioning */
+    top: 50%; /* Center the controls vertically */
+    transform: translateY(-50%);
+    opacity: 0.7; /* Slight opacity for better appearance */
+    transition: opacity 0.3s ease; /* Smooth transition effect */
+  }
+  
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    opacity: 1; /* Fully visible on hover */
+  }
+  
+  .carousel-control-prev {
+    left: -4%; /* Adjust positioning */
+  }
+  
+  .carousel-control-next {
+    right: -4%; /* Adjust positioning */
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: var(--primary-color); /* Use CSS variable */
+    border-radius: 50%; /* Make the control icons circular */
+    width: 30px; /* Uniform size for control icons */
+    height: 30px;
+  }
+  
+  /* Carousel indicators (dots) styling */
+  .carousel-indicators {
+    position: absolute; /* Absolute positioning */
+    bottom: 10px; /* Position at the bottom of the carousel */
+    left: 50%;
+    transform: translateX(-50%); /* Center indicators horizontally */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Flexbox layout */
+    justify-content: center;
+  }
+  
+  .carousel-indicators li {
+    background-color: var(--primary-color); /* Use CSS variable */
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    cursor: pointer; /* Show cursor pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .carousel-indicators .active {
+    background-color: var(--secondary-color); /* Darker color for the active indicator */
+  }
+  
+  /* Ensure images inside carousel are responsive */
+  .carousel-item img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain; /* Ensure the images don't stretch */
+  }
+  
+  /* Focus styling for accessibility */
+  .carousel-control-prev:focus,
+  .carousel-control-next:focus {
+    outline: 3px solid var(--secondary-color); /* Add a distinct focus outline */
+    outline-offset: 2px;
+  }
+  
+  /* Make carousel responsive */
+  @media (max-width: 575px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 10%; /* Increase width for better touch target */
+      left: -6%; /* Adjust controls for smaller screens */
+      right: -6%;
+    }
+  
+    .carousel-indicators {
+      bottom: 5px; /* Adjust bottom position for mobile */
+    }
+  }
+  
+/* footer  */
+/* Footer Section Styling */
+.footer-section {
+  padding: 40px 0;
+  background-color: #007c91; /* Dark aqua color */
+  color: #ffffff;
+}
+
+.footer-logo img {
+  max-height: 60px;
+  vertical-align: middle;
+}
+
+.company-name {
+  font-size: 1.5rem;
+  margin-left: 10px;
+  vertical-align: middle;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icon {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #004d4d; /* Darker shade for hover effect */
+}
+
+.footer-heading {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.footer-address,
+.footer-career {
+  font-size: 1rem;
+}
+
+.footer-address {
+  margin-bottom: 10px;
+}
+
+.footer-career a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-career a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.footer-copyright a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-copyright a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-logo {
+    text-align: center;
+    display: block;
+  }
+
+  .social-icons {
+    text-align: center;
+  }
+
+  .footer-heading {
+    font-size: 1.1rem;
+  }
+
+  .footer-address,
+  .footer-career {
+    font-size: 0.9rem;
+  }
+}

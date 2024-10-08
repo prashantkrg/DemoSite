@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid container">
+          <a class="navbar-brand" href="#">
+            <img src="/Staging/logo.png" alt="Logo" height="50px" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutus">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#services"
+                  id="servicesDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="servicesDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" href="#service1">Recruitment and Interview Process</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#service2">Career Guidance</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#service3">IT Job Placement</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#refer">Refer and Earn</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Slider -->
+    <section class="main-slide">
+      <div class="slide-container">
+        <div class="slide">
+          <div class="text-content">
+            <p>Empowering Futures, Connecting Talent</p>
+            <h1>Unlock Your Potential with</h1>
+            <h1><strong>VyomVision</strong></h1>
+
+            <a href="#connect" class="btn btn-primary btn-sm"
+              >Connect with Us</a
+            >
+            <a href="#refer" class="btn btn-secondary btn-sm">Refer and Earn</a>
+          </div>
+          <div class="image-content">
+            <img src="image1.jpg" alt="Slide 1 Image" />
+          </div>
+        </div>
+        <div class="slide slide2">
+          <div class="text-content">
+            <p>Infinite Possibilities, One Platform!</p>
+            <h1>Discover Your Dream Career</h1>
+            <h1>With <strong>VyomVision</strong></h1>
+            <a href="#connect" class="btn btn-primary btn-sm"
+              >Connect with Us</a
+            >
+            <a href="#refer" class="btn btn-secondary btn-sm">Refer and Earn</a>
+          </div>
+          <div class="image-content">
+            <img src="image2.jpg" alt="Slide 2 Image" />
+          </div>
+        </div>
+        <div class="slide slide3">
+          <div class="text-content">
+            <p>Connecting Talent to Triumph</p>
+            <h1>Elevate Your Career</h1>
+            <h1>With <strong>VyomVision</strong></h1>
+
+            <a href="#connect" class="btn btn-primary btn-sm"
+              >Connect with Us</a
+            >
+            <a href="#refer" class="btn btn-secondary btn-sm">Refer and Earn</a>
+          </div>
+          <div class="image-content">
+            <img src="image3.jpg" alt="Slide 3 Image" />
+          </div>
+        </div>
+      </div>
+      <div class="slider-controls">
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <div class="dots">
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+          <span class="dot" data-slide="3"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="vision-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-12 text-center vision-left">
+            <p class="vision-text">Our Vision</p>
+            <p class="company-name"><strong>VyomVision</strong></p>
+          </div>
+          <div class="col-lg-6 col-md-12 vision-right">
+            <p class="vision-paragraph">
+              We are dedicated to providing top-notch IT services and building
+              trust with our clients. Our vision is to foster lasting
+              partnerships that benefit everyone involved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services section -->
+
+    <section>
+      <div class="content-container">
+        <div class="row align-items-center">
+          <!-- Left Column with Text and Image -->
+          <div class="col-md-6">
+            <!-- Company Name -->
+            <h1 class="company-name"><strong>VyomVision</strong></h1>
+
+            <!-- "Our Services" text -->
+            <h2 class="services-title">Our Services</h2>
+
+            <!-- Paragraph -->
+            <p class="company-description">
+              We provide a wide range of services tailored to meet<br />
+              the diverse needs of our clients in various industries.<br />
+              Our goal is to help you succeed.
+            </p>
+
+            <!-- Image -->
+            <div class="image-container">
+              <img
+                src="/staging/services.jpg"
+                width="300px"
+                height="300px"
+                class="img-fluid"
+                alt="Service Image"
+              />
+            </div>
+          </div>
+
+          <!-- Right Column with Service Boxes -->
+          <div class="col-md-6">
+            <div class="row service-container">
+              <div class="col-6">
+                <div
+                  class="service-box"
+                  onclick="window.location='#it-job-placement'"
+                >
+                  <i class="bi bi-laptop"></i>
+                  <h4>IT Job Placement</h4>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="service-box" onclick="window.location='#staffing'">
+                  <h4>Staffing</h4>
+                </div>
+              </div>
+              <div class="col-6">
+                <div
+                  class="service-box"
+                  onclick="window.location='#interview-support'"
+                >
+                  <h4>Interview Support</h4>
+                </div>
+              </div>
+              <div class="col-6">
+                <div
+                  class="service-box"
+                  onclick="window.location='#career-guidance'"
+                >
+                  <h4>Career Guidance</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About us  -->
+    <section>
+      <div class="about-us-section">
+        <div class="row align-items-center">
+          <!-- Left side with image and boxes -->
+          <div class="col-md-6">
+            <div class="image-container">
+              <img
+                src="aboutus.jpg"
+                class="about-image"
+                alt="About Us"
+              />
+              <div class="info-box">
+                <i class="bi bi-globe"></i> 300+ Global Reach
+              </div>
+              <div class="info-box">
+                <i class="bi bi-award"></i> 350+ Success Stories
+              </div>
+            </div>
+          </div>
+          <!-- Right side with text -->
+          <div class="col-md-6 text-section">
+            <h2>About Us</h2>
+            <h4 class="mt-2">Simplify Your Success Journey with HireEaze</h4>
+            <p class="mt-3">
+              Step into HireEaze Solutions, your gateway to uniting outstanding
+              talent with top-tier opportunities. As a foremost provider of
+              profession and staffing services, our mission is to empower
+              individuals and aid businesses in constructing high-achieving
+              teams. Whether you’re at the outset of your career or in executive
+              positions, HireEaze is committed to discovering the ideal match
+              for both candidates and employers, fostering triumph in every
+              facet of IT careers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why choose us  -->
+    <section class="whychooseus">
+      <div class="container mt-5">
+        <div class="text-center">
+          <h1 class="mb-4">Give your Job Seekness to HireEaze</h1>
+          <h2 class="mb-5">Why Choose Us?</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="box p-4 text-center">
+              <i class="fa fa-users fa-3x mb-3"></i>
+              <h4>Staffing</h4>
+              <p>
+                VyomVision Solutions excels in IT recruitment and staffing
+                services for finance, healthcare, and technology sectors. We
+                offer versatile options: full-time, contract, and
+                contract-to-hire positions, creating the perfect match for
+                clients and candidates alike.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="box p-4 text-center">
+              <i class="fa fa-briefcase fa-3x mb-3"></i>
+              <h4>Career Guidance</h4>
+              <p>
+                Discover your professional compass with HireEaze Solutions. Our
+                career guidance offers insights, trends, and tailored advice to
+                steer you toward a successful future aligned with your
+                aspirations. Let's shape your journey together.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="box p-4 text-center">
+              <i class="fa fa-check fa-3x mb-3"></i>
+              <h4>Job Guarantee</h4>
+              <p>
+                VyomVision Solutions stands out by offering job guarantee plans,
+                providing job seekers with the confidence they need. Our
+                personalized approach and flexible payment options ensure your
+                career journey is supported every step of the way.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-4">
+            <div class="box p-4 text-center">
+              <i class="fa fa-handshake fa-3x mb-3"></i>
+              <h4>HR Outsourcing</h4>
+              <p>
+                Optimize your workforce with HR Outsourcing. We provide
+                seamless, expert support for efficient human resource
+                management, enhancing organizational effectiveness. Streamline
+                operations and maximize productivity with our tailored
+                solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Successfull Placement -->
+    <!-- <section>
+      <div class="container"></div>
+    </section> -->
+
+    <section class="testimonial-section">
+      <div class="container">
+        <h2 class="section-title text-center">What Our Clients Say</h2>
+        <div
+          id="testimonialCarousel"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!-- First Testimonial -->
+            <div class="carousel-item active">
+              <div class="testimonial text-center">
+                <img
+                  src="client111.jpg"
+                  alt="John Doe"
+                  class="testimonial-img mx-auto"
+                />
+                <div class="testimonial-content">
+                  <p class="testimonial-text">
+                    "This company is outstanding! Their services exceeded my
+                    expectations."
+                  </p>
+                  <h5 class="testimonial-author">- John Doe</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Second Testimonial -->
+            <div class="carousel-item">
+              <div class="testimonial text-center">
+                <img
+                  src="/staging/client2.avif"
+                  alt="Jane Smith"
+                  class="testimonial-img mx-auto"
+                />
+                <div class="testimonial-content">
+                  <p class="testimonial-text">
+                    "I highly recommend them for their professionalism and
+                    attention to detail."
+                  </p>
+                  <h5 class="testimonial-author">- Jane Smith</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Third Testimonial -->
+            <div class="carousel-item">
+              <div class="testimonial text-center">
+                <img
+                  src="/staging/client3.avif"
+                  alt="Mike Johnson"
+                  class="testimonial-img mx-auto"
+                />
+                <div class="testimonial-content">
+                  <p class="testimonial-text">
+                    "They provided exceptional service from start to finish!"
+                  </p>
+                  <h5 class="testimonial-author">- Mike Johnson</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel controls -->
+          <a
+            class="carousel-control-prev"
+            href="#testimonialCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#testimonialCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact-section" class="contact-section">
+      <div class="container">
+        <h2 class="section-title text-center">Have a Question? Get in Touch</h2>
+        <div class="row contact-info-wrapper">
+          <!-- Contact Info -->
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="contact-info">
+              <i class="fas fa-map-marker-alt contact-icon"></i>
+              <h5>Our Address</h5>
+              <p>123 Main Street, City, Country</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="contact-info">
+              <i class="fas fa-phone-alt contact-icon"></i>
+              <h5>Phone Number</h5>
+              <p>+1 (325) 219-0566</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="contact-info">
+              <i class="fas fa-envelope contact-icon"></i>
+              <h5>Email</h5>
+              <p>info@company.com</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 mb-4">
+            <div class="contact-info">
+              <i class="fas fa-clock contact-icon"></i>
+              <h5>Working Hours</h5>
+              <p>Monday to Friday: 9:00 AM - 5:00 PM (EST)</p>
+              <p>
+                Feel free to contact us anytime, and we will respond during our
+                working hours.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a
+            href="#contact-form"
+            class="btn contact-btn"
+            onclick="smoothScroll('#contact-form')"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="contact-form-section">
+      <div class="container">
+        <h2 class="section-title text-center">Contact Form</h2>
+        <form
+          action="https://formspree.io/f/mjkbdelp"
+          method="post"
+          id="contactForm"
+        >
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="col-md-6 mb-3">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 mb-3">
+              <textarea
+                id="message"
+                name="message"
+                class="form-control"
+                rows="4"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn contact-btn">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Our Candidates Placed In Section -->
+    <section id="candidates-placed" class="candidates-placed-section">
+      <div class="container">
+        <h2 class="section-title text-center">Our Candidates Placed In</h2>
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+          data-interval="2000"
+        >
+          <div class="carousel-inner">
+            <!-- First Slide -->
+            <div class="carousel-item active">
+              <div class="row">
+                <div
+                  class="col-md-2 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="ibm-logo.png"
+                    alt="Company 1"
+                    class="img-fluid company-logo"
+                  />
+                </div>
+                <div
+                  class="col-md-2 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="Accenture-logo.png"
+                    alt="Company 2"
+                    class="img-fluid company-logo"
+                  />
+                </div>
+                <div
+                  class="col-md-2 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="wiprologo.svg"
+                    alt="Company 3"
+                    class="img-fluid company-logo"
+                  />
+                </div>
+                <div
+                  class="col-md-2 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="Google Logo.webp"
+                    alt="Company 4"
+                    class="img-fluid company-logo"
+                  />
+                </div>
+                <div
+                  class="col-md-2 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="TCS logo.png"
+                    alt="Company 5"
+                    class="img-fluid company-logo"
+                  />
+                </div>
+                <div
+                  class="col-md-2 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="uber logo.png"
+                    alt="Company 6"
+                    class="img-fluid company-logo"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- Second Slide -->
+            <div class="carousel-item">
+              <div class="row">
+                <div
+                  class="col-md-2 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="Amazonlogo.png"
+                    alt="Company 7"
+                    class="img-fluid company-logo"
+                  />
+                </div>
+                <div
+                  class="col-md-2 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="flipkart-logo.png"
+                    alt="Company 8"
+                    class="img-fluid company-logo"
+                  />
+                </div>
+                <div
+                  class="col-md-2 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="Capgemini-Logo.svg"
+                    alt="Company 9"
+                    class="img-fluid company-logo"
+                  />
+                </div>
+                <div
+                  class="col-md-2 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="HCL_Technologies-Logo.png"
+                    alt="Company 10"
+                    class="img-fluid company-logo"
+                  />
+                </div>
+                <div
+                  class="col-md-2 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="BlueYonderlogo.png"
+                    alt="Company 11"
+                    class="img-fluid company-logo"
+                  />
+                </div>
+                <div
+                  class="col-md-2 d-flex justify-content-center align-items-center"
+                >
+                  <img
+                    src="microsoft-logo.png"
+                    alt="Company 12"
+                    class="img-fluid company-logo"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- Add more slides if needed -->
+          </div>
+
+          <!-- Carousel indicators -->
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <!-- Add more indicators if additional slides are added -->
+          </ol>
+
+          <!-- Carousel controls -->
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Left Side: Company Logo and Name -->
+          <div class="col-md-4 text-center text-md-left mb-3 mb-md-0">
+            <a href="/" class="footer-logo">
+              <img
+                src="/staging/logo.png"
+                alt="Company Logo"
+                class="img-fluid"
+              />
+              <span class="company-name">VyomVision Solutions</span>
+            </a>
+            <div class="social-icons mt-2">
+              <a href="https://facebook.com" target="_blank" class="social-icon"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://twitter.com" target="_blank" class="social-icon"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="https://linkedin.com" target="_blank" class="social-icon"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Center: Address -->
+          <div class="col-md-4 text-center mb-3 mb-md-0">
+            <h5 class="footer-heading">Our Address</h5>
+            <p class="footer-address">123 Main Street, City, Country</p>
+          </div>
+
+          <!-- Right Side: Career Information -->
+          <div class="col-md-4 text-center text-md-right">
+            <h5 class="footer-heading">Careers</h5>
+            <p class="footer-career">
+              Interested in working with us? Send your resume to
+              <a href="mailto:careers@company.com">careers@company.com</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Bottom: Copyright Notice -->
+        <div class="row">
+          <div class="col-12 text-center mt-3">
+            <p class="footer-copyright">
+              © 2024 Company Name. All rights reserved. |
+              <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+    <!-- <script src="ratio.js"></script> -->
+  </body>
+</html>
